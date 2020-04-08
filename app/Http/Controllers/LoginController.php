@@ -59,7 +59,9 @@ class LoginController extends Controller
         {
 
             $user = Auth::user();
-           return $user;
+           //return $user;
+		   return redirect('http://localhost:8004/chooseShop');
+		   //return  view('chooseShop');
             //return  view('chooseShop');
         }
         else
